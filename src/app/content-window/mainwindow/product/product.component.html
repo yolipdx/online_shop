@@ -1,0 +1,14 @@
+<div *ngIf="product" class="outer" (click)="productSelect.emit(product.key)">
+  <div class="inter">
+    <a>
+      <img [src]= product.img>
+      <p class="pdesc">{{product.name}} {{product.description}}</p>
+      <p>
+        <span class="pprice">$ {{product.price}}</span>
+        <span class="old-price">$ {{product.oldPrice}}</span> 
+      </p>
+
+      <p></p>
+    <span *ngFor="let i of product.scoreRange" class="star">✨</span></a>
+  </div>
+</div>

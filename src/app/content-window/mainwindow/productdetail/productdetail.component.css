@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Arima Madurai');
+@import url('//fonts.googleapis.com/css?family=Eater');
+@import url('//fonts.googleapis.com/css?family=Encode Sans');
+@import url('//fonts.googleapis.com/css?family=Economica');
+div.row {
+  margin-left: 2em;
+  width: 80%;
+  height: 80%;
+}
+
+div img {
+  width: 100%;
+  height: 100%;
+}
+
+.eva {
+  width: 100%;
+  height: 10em;
+  background-color: lightcyan;
+}
+
+#pname {
+  font-size: 1.2em;
+  font-family: 'Arima Madurai';
+}
+
+#pamount {
+  font-size: 1.2em;
+  font-family: 'Arima Madurai';
+}
+
+#priceHead {
+  font-size: 1.2em;
+  font-family: 'Arima Madurai'; 
+}
+
+#priceValue {
+  font-size: 1.5em;
+  font-family: 'Arima Madurai';
+  color: darkred;
+}
+#old-price {
+  font-size: 1.1em;
+  font-family: 'Arima Madurai';
+  text-decoration: line-through;
+  color: black;
+  margin-left: 0.2em;
+}
+
+
+#pdesc {
+  font-size: 1.5em;
+  font-family: 'Eater';
+  color: blue;
+}
+
+#in-stock {
+  color: green;
+  font-family: 'Encode Sans';
+}
+
+#reserve {
+  color: red;
+  font-family: 'Economica';
+  font-size: 1.4em;
+}

@@ -1,0 +1,15 @@
+
+
+.productWindow {
+  border: 1px solid whitesmoke;
+  /*padding: 0.2em 0.2em 0.2em 0.2em;*/
+  margin: 0.2em 1em 0.2em 1em;
+}
+
+.not-found {
+  color: lightskyblue;
+  text-align: center;
+  font-family: "Glyphicons Halflings";
+
+  height: 5em;
+}

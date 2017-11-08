@@ -1,0 +1,33 @@
+<div class="outer">
+
+
+  <ngx-carousel
+    [inputs]="carouselOne">
+    <!--(carouselLoad)="myfunc($event)">-->
+
+    <ngx-item NgxCarouselItem *ngFor="let productItem of product">
+      <div class="showItem">
+        <a (click)="onclick(productItem)">
+          <img [src]="productItem.img" 
+          [alt]="productItem.name" 
+          class="img-responsive"></a>
+      </div>
+    </ngx-item>
+
+
+    <button NgxCarouselPrev class='leftRs'>&lt;</button>
+    <button NgxCarouselNext class='rightRs'>&gt;</button>
+  </ngx-carousel>
+  
+</div>
+
+
+<!--&lt;!&ndash;try this~~&ndash;&gt;-->
+<!--<swiper [config]="config">-->
+  <!--<div class="swiper-wrapper">-->
+    <!--<img class="swiper-slide" *ngFor="let productItem of product" [src]="productItem.img">-->
+  <!--</div>-->
+  <!--<div class="swiper-pagination"></div>-->
+  <!--<div class="swiper-button-next"></div>-->
+  <!--<div class="swiper-button-prev"></div>-->
+<!--</swiper>-->

@@ -1,0 +1,5 @@
+
+<div id="content">
+  <app-showcase *ngIf="showComponent === 'showMainWindow'"></app-showcase>
+  <app-mainwindow  (showProductDetailFired) = "onShowDetail($event)" #mainWindow></app-mainwindow>
+</div>

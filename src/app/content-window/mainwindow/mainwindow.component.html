@@ -1,0 +1,50 @@
+<!--
+  怎么添加product，真的是个问题哇。 如果单独设置一个product component。好像不行啊
+  不能指定app-product里面的内容啊啊啊啊~~~
+-->
+
+<div class="row">
+    <!--<app-filter (filter)="onSort($event)"></app-filter>-->
+    <app-filter></app-filter>
+
+    <div class="productWindow">
+
+      <div class="row" *ngFor="let i of yRange; let row = index">
+        <div [class] = "'col-md-' + cellWidth"
+              *ngFor="let j of xRange; let col = index ">
+          <app-product
+            *ngIf="displayProduct[row*gridWidth + col]"
+            [product]="displayProduct[row*gridWidth + col]"
+            (productSelect)="onProductClick($event)">
+            </app-product>
+        </div>
+
+      </div>
+
+
+      <!--<app-prodcut *ngfor>-->
+
+      <!--</app-prodcut>-->
+
+
+
+
+
+      <div *ngIf="displayProduct.length === 0">
+        <h2 class="not-found">对不起，没有找到您需要的宝贝</h2>
+      </div>
+    </div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+

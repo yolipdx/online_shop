@@ -1,0 +1,51 @@
+@import url('//fonts.googleapis.com/css?family=Roboto|Material+Icons');
+@import url('//fonts.googleapis.com/css?family=Aguafina Script');
+@import url('//fonts.googleapis.com/css?family=Amatic SC');
+@import url('https://fonts.googleapis.com/css?family=Antic Didone');
+
+
+.filer {
+  /*postion: fixed;*/
+  background-color: #1976d2;
+  /*background-color: red;*/
+  height: 3em;
+  /*border: 1px solid rosybrown;*/
+  margin-left:  1em;
+  margin-right: 1em;
+
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+
+  opacity: 0.75;
+}
+
+.sort-type {
+	margin-left: 2em;
+	margin-right: 2em;
+  margin-top: 1em;
+
+  /*font-family: Farisi;*/
+  /*color: red;*/
+  /*font-weight: bold;*/
+}
+
+.sort-text {
+  font-size: 1.4em;
+  font-weight:400;
+  font-family: 'Antic Didone';
+  color: white;
+}
+
+.sort-head {
+  margin-left: 1em;
+  /* font-weight: bold; */
+  color: white;
+  font-size: 1.4em;
+  font-weight:400;
+  
+  font-family: 'Antic Didone';
+}
+.input-group {
+  width: 50%;
+  margin-top: 0.1em;
+}

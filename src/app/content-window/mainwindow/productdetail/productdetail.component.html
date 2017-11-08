@@ -1,0 +1,42 @@
+<div class="row" *ngIf="product">
+
+ <div class="col-sm-6">
+    <img [src]= product.img>
+    <!--<div>-->
+      <!--<p>other information</p>-->
+    <!--</div>-->
+  </div>
+
+  <div class="col-sm-6">
+    <p id="pname">{{product.name}}</p>
+    <!-- <p>类别: {{product.kind}}</p> -->
+
+    <p *ngIf="product.amount>=10" id='in-stock'> In stock</p>
+    <p *ngIf="product.amount<=10" id='reserve'> Reserve Now, Coming soon</p>
+    <!-- <p id="pamount">in stock: {{product.amount}} </p> -->
+    <!--<p>selected: {{selectInput.value}}</p>-->
+
+    <p id="priceHead">Price:
+      <span id="priceValue"><strong>$ {{product.price}}</strong></span>
+      <span id="old-price"> $ {{product.oldPrice}}</span>
+    </p>
+    <article id="pdesc">{{product.description}}</article>
+
+    <form class="form" (ngSubmit)="onPutIntoCart(selectInput.value)">
+      <hr>
+      <select #selectInput>
+        <option *ngFor="let item of amountRange; let i = index"
+                [value]=i+1
+        >{{i+1}}</option>
+      </select>
+
+      <hr>
+      <button class="btn btn-warning">Add into Cart</button>
+    </form>
+
+    <hr>
+    <button class="btn btn-primary" (click)="onContinueShop()">Continue Shopping</button>
+    <button class="btn btn-danger" (click)="onConfirm()">Finish Shopping</button>
+    <hr>
+  </div>
+</div>

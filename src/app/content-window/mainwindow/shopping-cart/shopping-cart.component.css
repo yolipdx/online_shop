@@ -1,0 +1,78 @@
+label {
+  /*width: 20em;*/
+  text-align: right;
+  /*margin-right: 0.1em;*/
+}
+
+fieldset {
+  /* border: 1px solid #1976d2; */
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  padding: 2em;
+}
+
+legend {
+  margin-left: 10%;
+  width: 20%;
+
+  border-bottom:none;
+}
+
+
+.product-list-head {
+  font-weight: bold;
+  font-family: Arial;
+}
+
+.head {
+  margin-left: 0.2em;
+  margin-right: 0.2em;
+  border-bottom: 1px solid lightgrey;
+
+}
+
+.head-price {
+  color: darkred;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: bottom;
+  /*padding-bottom: 0;*/
+}
+
+.head_amount {
+  margin: auto;
+  font-weight:bold;
+}
+
+.head-summary {
+  text-align: center;
+  font-weight: bold;
+  font-size: large;
+  color: black;
+
+  margin-bottom: 1em;
+
+}
+
+.ng-valid[required], .ng-valid.required  {
+  border-left: 5px solid #42A948; /* green */
+}
+
+.ng-invalid:not(form)  {
+  border-left: 5px solid #a94442; /* red */
+}
+
+.empty-cart {
+  /*min-height: 100%;*/
+  margin-top: 1em;
+  min-height: 550px;
+}
+
+.warning {
+  color: red;
+}
+
+#addr, #phone {
+  width: 50%;
+}
+

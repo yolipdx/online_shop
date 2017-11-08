@@ -1,0 +1,34 @@
+  <form class="filer" (ngSubmit)="search(serchItem.value)">
+      <div class="row">
+        <div class="col-md-6">
+          <span class="sort-head">sort by </span>
+
+          <input type="radio" class="sort-type" name="sort-type" (click)='sort("score")'>
+          <span class="sort-text">score</span>
+
+          <input type="radio" class="sort-type" name="sort-type" (click)='sort("date")' #inputDate>
+          <span class="sort-text">date</span>
+          <input type="radio" class="sort-type" name="sort-type" (click)='sort("amount")' #inputAmount>
+          <span class="sort-text">sales</span>
+          <!-- <br> -->
+          <!--<input type="radio" class="sort-type" name="sort-type" (click)='sort("recommend")' #inputRecommand>卖家推荐-->
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="input-group">
+            <input #serchItem type="text" class="form-control" placeholder="Search">
+            <div class="input-group-btn">
+              <button class="btn btn-default" type="submit">
+                <i class="glyphicon glyphicon-search"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+  </form>
+
+
+
+

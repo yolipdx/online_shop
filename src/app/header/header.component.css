@@ -1,0 +1,35 @@
+/* @import url('https://fonts.googleapis.com/css?family=Antic Didone'); */
+@import url('//fonts.googleapis.com/css?family=Barrio');
+#outer {
+  min-height: 100%;
+  background-color: #1976d2;
+  color: #fff;
+  font-weight: 300;
+  position: relative;
+  z-index: 0;
+}
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  color: gray;  /*Sets the text hover color on navbar*/
+}
+
+/*.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >*/
+/*a:hover, .navbar-default .navbar-nav > .active > a:focus {*/
+  /*color: gray; !*BACKGROUND color for active*!*/
+  /*background-color: #1976d2;*/
+/*}*/
+
+.navbar-default {
+  background-color: #1976d2;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: white; /*Change active text color here*/
+  font-family: 'Antic Didone', sans-serif;
+}
+
+
+.navbar-header, .navbar-brand {
+  color: white;
+  font-family: 'Barrio', sans-serif;
+}

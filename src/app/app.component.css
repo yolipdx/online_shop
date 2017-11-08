@@ -1,0 +1,22 @@
+#content {
+  min-height: 100%;
+  /*width: 1000px;*/
+  /*height: 1000px;*/
+  /*background-color: pink;*/
+}
+
+
+html, body {
+  min-height: 100%;
+  /*height: 888px;*/
+  /*background-color: pink;*/
+}
+
+app-root {
+  min-height: 100%;
+  height: 1000px;
+  width: 1000px;
+  background-color: red;
+
+  content: "111111111";
+}
